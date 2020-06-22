@@ -1,0 +1,12 @@
+User input as URL parameters -
+	fileName, startLineNo and endLineNo are optional
+
+	1. File1.txt is the default file to search when no input is provided from the consumer.
+
+
+	Conditions as per startLineNo and endLineNo inputs:
+	1. if only startLineNo is provided, all the lines starting from the startLineNo(included) are returned.
+	2. if only endLineNo is provided, all the lines till endLineNo(included) are returned starting from 0th line.
+	3. if both startLine and endLineNo is provided in the URL, then all lines between the lineNos(both included) are returned.
+	4. if nothing is provided, all the records from the files are provided.
+	5. if endLineNo is greater than total number of lines in the files. We just returns all the lines starting from startLineNo to end of file.
